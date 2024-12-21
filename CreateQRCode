@@ -16,4 +16,4 @@ qr.make(fit=True)
 img = qr.make_image(fill_color="black", back_color="white")
 
 # Save the image (this part wouldn't work in the chat)
-# img.save("petition_qr_code.png") 
+img.save("petition_qr_code.png") 
