@@ -59,10 +59,12 @@ h2 {
 
 .input-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 15px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 input[type="text"] {
@@ -92,6 +94,7 @@ button {
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 600;
     transition: background-color 0.3s ease;
+    white-space: nowrap;
 }
 
 button:hover {
@@ -179,6 +182,11 @@ footer a:hover {
     
     .tagline {
         font-size: 1em;
+    }
+    
+    .input-group {
+        flex-direction: column;
+        gap: 15px;
     }
     
     input[type="text"] {
