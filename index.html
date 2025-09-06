@@ -3,25 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL to QR Code Generator</title>
+    <title>Free QR Code Generator - No Limits, No Sign-up</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
-    <h1>URL to QR Code Generator</h1>
+    <header>
+        <h1>Free QR Code Generator</h1>
+        <p class="tagline">
+            <strong>100% Free Forever</strong> • No Sign-up • No Watermarks • No Limits
+        </p>
+        <p class="subtitle">
+            Vibe-coded as a quick exercise in practical web development
+        </p>
+    </header>
     
-    <div class="container">
-        <div class="input-group">
-            <input type="text" id="urlInput" placeholder="Enter URL (e.g., https://example.com)" value="">
-            <button id="generateBtn">Generate QR Code</button>
-        </div>
-        
-        <p id="error" class="error">Please enter a valid URL (including http:// or https://)</p>
-        
-        <div id="qrcode"></div>
-        
-        <button id="downloadBtn" class="download-btn">Download QR Code</button>
-    </div>
+    <main class="container">
+        <section class="generator-section">
+            <p class="instruction">
+                Replace the URL below with your own to create a custom QR code!
+            </p>
+            
+            <div class="input-group">
+                <input type="text" id="urlInput" placeholder="Enter any URL to generate a QR code" value="">
+                <button id="generateBtn">Generate QR Code</button>
+            </div>
+            
+            <p id="error" class="error">Please enter a valid URL (including http:// or https://)</p>
+            
+            <div id="qrcode"></div>
+            
+            <button id="downloadBtn" class="download-btn">Download QR Code</button>
+        </section>
+
+        <section class="features-section">
+            <h2>Why This Generator?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Truly Free</h3>
+                    <p>No hidden costs, premium upgrades, or feature limitations. Generate unlimited QR codes.</p>
+                </div>
+                <div class="feature">
+                    <h3>Privacy First</h3>
+                    <p>No data collection, tracking, or account required. Your URLs stay private.</p>
+                </div>
+                <div class="feature">
+                    <h3>High Quality</h3>
+                    <p>256x256 pixel resolution with high error correction. Professional quality output.</p>
+                </div>
+                <div class="feature">
+                    <h3>Instant Download</h3>
+                    <p>One-click PNG download with smart file naming. No watermarks ever.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="use-cases-section">
+            <h2>Perfect For</h2>
+            <div class="use-cases">
+                <span class="use-case">Event Registration</span>
+                <span class="use-case">Business Cards</span>
+                <span class="use-case">WiFi Sharing</span>
+                <span class="use-case">Social Media</span>
+                <span class="use-case">Product Info</span>
+                <span class="use-case">Digital Menus</span>
+                <span class="use-case">Contact Details</span>
+                <span class="use-case">Website Links</span>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>About This Tool</h2>
+            <p>
+                Built with vanilla JavaScript as a rapid development exercise. 
+                Unlike commercial QR generators that often have hidden limitations, 
+                this tool provides genuinely free QR code generation with no strings attached.
+            </p>
+            <p>
+                <strong>Technical details:</strong> Uses the QRCode.js library for generation, 
+                HTML5 Canvas for rendering, and client-side processing for privacy. 
+                Part of the <a href="https://finnern.com" target="_blank">Waldschrat Consulting</a> 
+                toolkit for practical digital solutions.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Created by <a href="https://finnern.com" target="_blank">Mark Finnern</a> • 
+            <a href="https://github.com/finnern/QR-Code" target="_blank">View Source</a> • 
+            <a href="https://linkedin.com/in/finnern" target="_blank">Connect</a>
+        </p>
+    </footer>
 
     <script src="qr-generator.js"></script>
 </body>
