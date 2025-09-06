@@ -25,9 +25,18 @@ A free, fast web-based QR code generator built with vanilla JavaScript. Clean in
 - **QRCode.js** - Lightweight QR generation library
 - **GitHub Pages** - Static site hosting
 
+## Why Choose This Generator?
+
+Unlike many QR code services, this tool is:
+- ✅ **Completely free** - No hidden costs or premium upgrades
+- ✅ **No registration required** - Works instantly
+- ✅ **No watermarks** - Clean, professional output
+- ✅ **Privacy-focused** - No data collection or tracking
+- ✅ **Open source** - Transparent and trustworthy
+
 ## Quick Start
 
 1. Visit the [live demo](https://finnern.com/QR-Code/)
 2. Replace the pre-filled URL with your own
 
-Enjoy! 
+## Enjoy! 
