@@ -8,7 +8,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
-    <!-- HTML structure only -->
+    <h1>URL to QR Code Generator</h1>
+    
+    <div class="container">
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="Enter URL (e.g., https://example.com)" value="">
+            <button id="generateBtn">Generate QR Code</button>
+        </div>
+        
+        <p id="error" class="error">Please enter a valid URL (including http:// or https://)</p>
+        
+        <div id="qrcode"></div>
+        
+        <button id="downloadBtn" class="download-btn">Download QR Code</button>
+    </div>
+
     <script src="qr-generator.js"></script>
 </body>
 </html>
