@@ -2,7 +2,7 @@
 
 A free, fast web-based QR code generator built with vanilla JavaScript. Clean interface, instant generation, and one-click downloads.
 
-![QR Code Generator Screenshot](URL%20to%20QR%20Code%20Converter%20Screenshot.png)
+<img src="URL to QR Code Converter Screenshot.png" alt="QR Code Generator Screenshot" width="400">
 
 ## Features
 
