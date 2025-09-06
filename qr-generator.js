@@ -7,7 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let qrcode = null;
     
-    // Function to validate URL
+    // Auto-populate with current URL and generate QR code on load
+    const currentUrl = window.location.href;
+    urlInput.value = currentUrl;
+    generateQRCode(currentUrl);
+    
     function isValidUrl(string) {
         try {
             new URL(string);
@@ -17,15 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Generate QR code
-    generateBtn.addEventListener('click', function() {
-        const url = urlInput.value.trim();
-        
-        if (!url || !isValidUrl(url)) {
-            errorMsg.style.display = 'block';
-            return;
-        }
-        
+    function generateQRCode(url) {
         errorMsg.style.display = 'none';
         qrcodeDiv.innerHTML = '';
         
@@ -39,9 +35,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         downloadBtn.style.display = 'block';
+    }
+    
+    generateBtn.addEventListener('click', function() {
+        const url = urlInput.value.trim();
+        
+        if (!url || !isValidUrl(url)) {
+            errorMsg.style.display = 'block';
+            return;
+        }
+        
+        generateQRCode(url);
     });
     
-    // Download functionality
     downloadBtn.addEventListener('click', function() {
         const canvas = qrcodeDiv.querySelector('canvas');
         if (canvas) {
