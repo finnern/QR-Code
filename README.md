@@ -1,26 +1,32 @@
 # QR Code Generator
 
-A free, fast web-based QR code generator built with vanilla JavaScript.
+A free, fast web-based QR code generator built with vanilla JavaScript. Clean interface, instant generation, and one-click downloads.
+
+![QR Code Generator Screenshot](screenshot.png)
 
 ## Features
-- Instant QR code generation
-- URL validation
-- High-resolution output
-- One-click download
-- Mobile-responsive design
 
-## Tech Stack
-- **JavaScript** - Core functionality and DOM manipulation
-- **HTML5 Canvas** - QR code rendering
-- **CSS3** - Modern responsive design
-- **QRCode.js** - QR generation library
+- **Instant QR code generation** - Real-time creation as you type
+- **URL validation** - Ensures valid URLs before generation
+- **High-resolution output** - 256x256 pixel QR codes with high error correction
+- **One-click download** - Save QR codes as PNG files with smart naming
+- **Mobile-responsive design** - Works perfectly on all devices
+- **Self-demonstrating** - Shows its own QR code on load
 
 ## Live Demo
-[Try it here](https://finnern.github.io/QR-Code/)
 
-## Usage
-1. Enter any valid URL
-2. Click "Generate QR Code"
-3. Download the PNG image
+**[Try it here: finnern.com/QR-Code](https://finnern.com/QR-Code/)**
 
-Built with ❤️ for rapid digital solutions.
+## Tech Stack
+
+- **JavaScript (ES6+)** - Core functionality and DOM manipulation
+- **HTML5 Canvas** - QR code rendering
+- **CSS3** - Modern responsive design with Flexbox
+- **QRCode.js** - Lightweight QR generation library
+- **GitHub Pages** - Static site hosting
+
+## Quick Start
+
+1. Visit the [live demo](https://finnern.com/QR-Code/)
+2. Replace the pre-filled URL with your own
+3.
