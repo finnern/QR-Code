@@ -29,4 +29,5 @@ A free, fast web-based QR code generator built with vanilla JavaScript. Clean in
 
 1. Visit the [live demo](https://finnern.com/QR-Code/)
 2. Replace the pre-filled URL with your own
-3.
+
+Enjoy! 
